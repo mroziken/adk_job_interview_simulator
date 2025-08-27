@@ -1,0 +1,11 @@
+# Core
+google-adk>=0.5.0
+litellm>=1.48.6
+pydantic>=2.6.0
+rich>=13.7.0
+python-dotenv>=1.0.1
+
+# (Optional) Audio if you want to keep TTS/STT features from the LangGraph version
+sounddevice>=0.4.6
+soundfile>=0.12.1
+numpy>=1.26.0
