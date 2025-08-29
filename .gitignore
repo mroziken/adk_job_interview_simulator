@@ -6,3 +6,12 @@ interview*.json
 *.pyo
 *.pyd
 .DS_Store
+*.log
+.git
+.gitignore
+dist
+build
+*.egg-info
+node_modules
+.vscode 
+.idea

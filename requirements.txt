@@ -1,11 +1,13 @@
-# Core
-google-adk>=0.5.0
-litellm>=1.48.6
-pydantic>=2.6.0
-rich>=13.7.0
-python-dotenv>=1.0.1
+# === Runtime (Cloud Run) ===
+google-adk==1.12.0          # create_session is async since 1.0; 1.12.0 is stable
+fastapi>=0.116,<0.117       # matches current 0.116.x line
+uvicorn>=0.35,<0.36         # works well with FastAPI 0.116.x
+pydantic>=2.11,<3
+python-dotenv>=1.0,<2
+rich>=13.7,<14
 
-# (Optional) Audio if you want to keep TTS/STT features from the LangGraph version
-sounddevice>=0.4.6
-soundfile>=0.12.1
-numpy>=1.26.0
+# === Optional / local only ===
+#litellm>=1.48.6            # keep ONLY if you actually call litellm directly
+#sounddevice>=0.4.6         # local TTS/STT only; not useful on Cloud Run
+#soundfile>=0.12.1
+#numpy>=1.26.0
